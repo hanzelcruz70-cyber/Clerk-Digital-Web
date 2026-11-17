@@ -183,6 +183,9 @@ h1 em, .grande em, .titulo-serif em { font-style: italic; color: var(--acento); 
 .planes.filtrados { display: flex; flex-wrap: wrap; justify-content: center; }
 .planes.filtrados .plan { flex: 0 1 340px; }
 .planes.filtrados .plan[hidden] { display: none; }
+.plan h3 .gratis { color: var(--verde); font-family: var(--sans); font-size: .8rem; font-weight: 700; margin-left: 8px; letter-spacing: 0; white-space: nowrap; }
+@media (prefers-color-scheme: dark) { :root:not([data-tema="claro"]) .plan h3 .gratis { color: #3ecf72; } }
+:root[data-tema="oscuro"] .plan h3 .gratis { color: #3ecf72; }
 .plan { position: relative; display: flex; flex-direction: column; text-align: left; }
 .plan.destacada { border: 2px solid var(--acento); box-shadow: 0 30px 60px -30px var(--acento); }
 .plan .sello { position: absolute; top: -13px; left: 26px; background: var(--acento); color: #fff; font-size: .75rem; font-weight: 700; border-radius: 999px; padding: 3px 12px; }
