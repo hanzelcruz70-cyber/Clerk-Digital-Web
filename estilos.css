@@ -183,8 +183,6 @@ h1 em, .grande em, .titulo-serif em { font-style: italic; color: var(--acento); 
 .planes.filtrados { display: flex; flex-wrap: wrap; justify-content: center; }
 .planes.filtrados .plan { flex: 0 1 340px; }
 .planes.filtrados .plan[hidden] { display: none; }
-.plan .ahorro { margin: -4px 0 14px; padding: 10px 12px; border-radius: 10px; background: color-mix(in srgb, var(--verde) 12%, transparent); color: var(--tinta); font-size: .92rem; line-height: 1.4; }
-.plan .ahorro b { color: var(--verde); }
 .plan { position: relative; display: flex; flex-direction: column; text-align: left; }
 .plan.destacada { border: 2px solid var(--acento); box-shadow: 0 30px 60px -30px var(--acento); }
 .plan .sello { position: absolute; top: -13px; left: 26px; background: var(--acento); color: #fff; font-size: .75rem; font-weight: 700; border-radius: 999px; padding: 3px 12px; }
