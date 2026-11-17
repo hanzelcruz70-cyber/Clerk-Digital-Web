@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Precios de Clerk Digital · Punto de venta en Nicaragua</title>
-<meta name="description" content="Desde C$ 350 al mes, o un solo pago de C$ 3,500 para una caja y C$ 7,300 para cajas sin límite. Facturas de la DGI, fiado, inventario y caja. Demo gratis de 30 minutos.">
+<meta name="description" content="Desde C$ 350 al mes, o un solo pago de C$ 3,500 (lo mismo que 10 meses) para una caja y C$ 7,300 para cajas sin límite. Facturas de la DGI, fiado, inventario y caja. Demo gratis de 30 minutos.">
 <link rel="canonical" href="https://clerk-digital.red-informatica.com/precios/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#0b5cad">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Precios de Clerk Digital · Punto de venta en Nicaragua">
-<meta property="og:description" content="Desde C$ 350 al mes, o un solo pago de C$ 3,500 para una caja y C$ 7,300 para cajas sin límite. Facturas de la DGI, fiado, inventario y caja. Demo gratis de 30 minutos.">
+<meta property="og:description" content="Desde C$ 350 al mes, o un solo pago de C$ 3,500 (lo mismo que 10 meses) para una caja y C$ 7,300 para cajas sin límite. Facturas de la DGI, fiado, inventario y caja. Demo gratis de 30 minutos.">
 <meta property="og:url" content="https://clerk-digital.red-informatica.com/precios/">
 <meta property="og:site_name" content="Clerk Digital">
 <meta property="og:image" content="https://clerk-digital.red-informatica.com/img/cobrar.png">
@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="../estilos.css?v=5c757a1d">
+<link rel="stylesheet" href="../estilos.css?v=90eafd77">
 <script>try { const t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.tema = t; } catch {}</script>
 </head>
 <body>
@@ -56,7 +56,6 @@
  "offers":[
   {"@type":"Offer","name":"Demo","price":"0","priceCurrency":"NIO","description":"30 minutos de uso, con todas las funciones"},
   {"@type":"Offer","name":"Mensual","price":"350","priceCurrency":"NIO","priceSpecification":{"@type":"UnitPriceSpecification","price":"350","priceCurrency":"NIO","unitCode":"MON"}},
-  {"@type":"Offer","name":"Anual","price":"3500","priceCurrency":"NIO","priceSpecification":{"@type":"UnitPriceSpecification","price":"3500","priceCurrency":"NIO","unitCode":"ANN"}},
   {"@type":"Offer","name":"Una caja, para siempre","price":"3500","priceCurrency":"NIO"},
   {"@type":"Offer","name":"Varias cajas, para siempre","price":"7300","priceCurrency":"NIO"}]}
 </script>
@@ -64,22 +63,23 @@
   <div class="contenedor centro">
     <p class="pastilla aparece"><i></i>Precios</p>
     <h1 data-letras style="font-size:clamp(2.6rem,6.5vw,5rem)">Precios claros, <em>en córdobas</em></h1>
-    <p class="bajada aparece" style="--retraso:.35s">Todos los planes traen todas las funciones, también las facturas de la DGI. Pagá por mes, por año o una sola vez.</p>
-    <div class="selector aparece" role="group" aria-label="Forma de pago" style="--retraso:.5s"><button type="button" data-periodo="mes" aria-pressed="true">Por mes</button><button type="button" data-periodo="anio" aria-pressed="false">Por año <small>2 meses gratis</small></button><button type="button" data-periodo="unico" aria-pressed="false">Un solo pago</button></div>
+    <p class="bajada aparece" style="--retraso:.35s">Todos los planes traen todas las funciones, también las facturas de la DGI. Pagá por mes, o una sola vez y es tuyo.</p>
+    <div class="selector aparece" role="group" aria-label="Forma de pago" style="--retraso:.5s"><button type="button" data-periodo="mes" aria-pressed="true">Por mes</button><button type="button" data-periodo="unico" aria-pressed="false">Un solo pago <small>2 meses gratis</small></button></div>
   </div>
 </section>
 
 <section class="seccion" style="padding-top:10px">
   <div class="contenedor">
     <div class="planes filtrados" data-escalonar>
-      <article class="tarjeta plan" data-planes="mes anio unico"><h3>Demo</h3><p class="suave">Para conocerlo sin compromiso.</p><p class="precio"><b>Gratis</b><span>30 minutos</span></p>
+      <article class="tarjeta plan" data-planes="mes unico"><h3>Demo</h3><p class="suave">Para conocerlo sin compromiso.</p><p class="precio"><b>Gratis</b><span>30 minutos</span></p>
         <ul class="checks"><li>El programa completo</li><li>Sin tarjeta</li><li>Datos de ejemplo para practicar</li><li>Al activarlo no se pierde nada</li></ul>
         <a class="boton boton-claro" href="../info/descargas/">Descargar</a></article>
-      <article class="tarjeta plan destacada" data-planes="mes anio"><span class="sello">Para empezar</span><h3>Suscripción</h3><p class="suave">Sin pagar todo de una vez.</p>
-        <p class="precio"><b data-precio-mes="C$ 350" data-precio-anio="C$ 3,500">C$ 350</b><span data-unidad-mes="al mes" data-unidad-anio="al año">al mes</span></p>
-        <ul class="checks"><li>Todas las funciones</li><li>Actualizaciones y soporte siempre incluidos</li><li>Cada caja extra: <span data-precio-mes="C$ 150 al mes" data-precio-anio="C$ 1,500 al año">C$ 150 al mes</span></li><li>7 días de gracia si te atrasás</li><li>Anual: pagás 10 meses y usás 12</li></ul>
+      <article class="tarjeta plan destacada" data-planes="mes"><span class="sello">Para empezar</span><h3>Suscripción</h3><p class="suave">Sin pagar todo de una vez.</p>
+        <p class="precio"><b>C$ 350</b><span>al mes</span></p>
+        <ul class="checks"><li>Todas las funciones</li><li>Actualizaciones y soporte siempre incluidos</li><li>Cada caja extra: C$ 150 al mes</li><li>7 días de gracia si te atrasás</li><li>Dejás de pagar cuando querás</li></ul>
         <a class="boton" href="https://wa.me/50589188813?text=Hola%2C%20quiero%20la%20suscripci%C3%B3n%20de%20Clerk%20Digital" rel="noopener" target="_blank">Lo quiero <span class="flecha">→</span></a></article>
       <article class="tarjeta plan" data-planes="unico"><h3>Una caja</h3><p class="suave">Pagás una vez y es tuyo.</p><p class="precio"><b>C$ 3,500</b><span>un solo pago</span></p>
+        <p class="ahorro">Es lo mismo que <b>10 meses</b> de suscripción: los otros 2 del año te salen gratis, y después ya no pagás más.</p>
         <ul class="checks"><li>Todas las funciones</li><li>Para siempre en una compu</li><li>12 meses de actualizaciones y soporte</li><li>Después, renovación opcional</li></ul>
         <a class="boton boton-claro" href="https://wa.me/50589188813?text=Hola%2C%20quiero%20Clerk%20Digital%20para%20una%20caja%20(un%20solo%20pago)" rel="noopener" target="_blank">Lo quiero</a></article>
       <article class="tarjeta plan destacada" data-planes="unico"><span class="sello">Cajas sin límite</span><h3>Varias cajas</h3><p class="suave">Para tiendas con más de una caja.</p><p class="precio"><b>C$ 7,300</b><span>un solo pago</span></p>
@@ -116,7 +116,7 @@
         <tr><td>Reportes y Excel con formato</td><td class="si">✓</td><td class="si">✓</td><td class="si">✓</td><td class="si">✓</td></tr>
         <tr><td>Ver el negocio desde el celular (WiFi de la tienda)</td><td class="si">✓</td><td class="si">✓</td><td class="si">✓</td><td class="si">✓</td></tr>
         <tr class="grupo"><td colspan="5">Crecer</td></tr>
-        <tr><td>Cajas que cobran</td><td>Las que quieras</td><td>1 + las extra que pagués</td><td>1</td><td><b>Sin límite</b></td></tr>
+        <tr><td>Cajas que cobran</td><td>Las que quieras</td><td>1 + C$ 150 al mes por cada extra</td><td>1</td><td><b>Sin límite</b></td></tr>
         <tr><td>Sucursales y traslados</td><td class="si">✓</td><td class="si">✓</td><td class="si">✓</td><td class="si">✓</td></tr>
         <tr class="grupo"><td colspan="5">Tranquilidad</td></tr>
         <tr><td>Respaldo diario y en OneDrive o Google Drive</td><td class="si">✓</td><td class="si">✓</td><td class="si">✓</td><td class="si">✓</td></tr>
@@ -134,9 +134,9 @@
     <div class="envoltura-tabla aparece" style="margin-top:24px"><table class="tabla">
       <thead><tr><th>Tienda</th><th>Suscripción</th><th>Un solo pago</th></tr></thead>
       <tbody>
-        <tr><td>Pulpería con 1 caja</td><td>C$ 350 al mes, o C$ 3,500 al año</td><td>C$ 3,500 (Una caja)</td></tr>
-        <tr><td>Ferretería con 2 cajas</td><td>C$ 500 al mes, o C$ 5,000 al año</td><td>C$ 7,300 (Varias cajas)</td></tr>
-        <tr><td>Minisúper con 4 cajas</td><td>C$ 800 al mes, o C$ 8,000 al año</td><td>C$ 7,300 (Varias cajas)</td></tr>
+        <tr><td>Pulpería con 1 caja</td><td>C$ 350 al mes</td><td>C$ 3,500 (Una caja): lo que pagarías en 10 meses</td></tr>
+        <tr><td>Ferretería con 2 cajas</td><td>C$ 500 al mes</td><td>C$ 7,300 (Varias cajas)</td></tr>
+        <tr><td>Minisúper con 4 cajas</td><td>C$ 800 al mes</td><td>C$ 7,300 (Varias cajas): lo que pagarías en 9 meses</td></tr>
       </tbody></table></div>
   </div>
 </section>
@@ -178,6 +178,6 @@
   </div>
 </footer>
 <a class="dudas" href="../contacto/">¿Dudas?</a>
-<script src="../sitio.js?v=1f9e62c3" defer></script>
+<script src="../sitio.js?v=60c5c66e" defer></script>
 </body>
 </html>

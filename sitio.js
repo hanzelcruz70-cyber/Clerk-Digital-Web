@@ -1,5 +1,5 @@
 // Clerk Digital · sitio web: tema claro/oscuro, menú del celular, animaciones al bajar, pantalla 3D, avisos,
-// carruseles, contador de números, precios mensual/anual, videos y formulario de contacto (Formspree).
+// carruseles, contador de números, precios (por mes o un solo pago), videos y formulario de contacto (Formspree).
 (() => {
   const raiz = document.documentElement;
   const sinMovimiento = matchMedia('(prefers-reduced-motion: reduce)').matches;
