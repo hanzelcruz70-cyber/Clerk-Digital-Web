@@ -179,8 +179,10 @@ h1 em, .grande em, .titulo-serif em { font-style: italic; color: var(--acento); 
 .selector small { color: var(--verde); font-weight: 700; margin-left: 6px; }
 .selector button[aria-pressed="true"] small { color: #d9ffe6; }
 .planes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: stretch; }
-.planes.cuatro { grid-template-columns: repeat(4, 1fr); }
-@media (max-width: 1100px) { .planes.cuatro { grid-template-columns: repeat(2, 1fr); } }
+/* precios: solo se ven los planes de la forma de pago escogida, centrados */
+.planes.filtrados { display: flex; flex-wrap: wrap; justify-content: center; }
+.planes.filtrados .plan { flex: 0 1 340px; }
+.planes.filtrados .plan[hidden] { display: none; }
 .plan { position: relative; display: flex; flex-direction: column; text-align: left; }
 .plan.destacada { border: 2px solid var(--acento); box-shadow: 0 30px 60px -30px var(--acento); }
 .plan .sello { position: absolute; top: -13px; left: 26px; background: var(--acento); color: #fff; font-size: .75rem; font-weight: 700; border-radius: 999px; padding: 3px 12px; }
@@ -274,7 +276,7 @@ h1 em, .grande em, .titulo-serif em { font-style: italic; color: var(--acento); 
   .menu-celular.abierto { transform: none; }
   .menu-celular a { padding: 12px; border-radius: 10px; color: var(--tinta); font-weight: 600; }
   .barra-in .boton { display: none; }
-  .rejilla, .rejilla.dos, .rejilla.cuatro, .pasos, .planes, .planes.cuatro, .numeros, .videos, .pie-in { grid-template-columns: 1fr; }
+  .rejilla, .rejilla.dos, .rejilla.cuatro, .pasos, .planes, .numeros, .videos, .pie-in { grid-template-columns: 1fr; }
   .numeros { grid-template-columns: 1fr 1fr; }
   .pasos li::after { display: none; }
   .funcion { grid-template-columns: 1fr; gap: 28px; padding: 44px 0; }

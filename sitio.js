@@ -64,12 +64,17 @@
   const obsN = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { contar(e.target); obsN.unobserve(e.target); } }), { threshold: .6 });
   document.querySelectorAll('[data-contar]').forEach(el => obsN.observe(el));
 
-  /* precios: mensual o anual */
+  /* precios: por mes, por año o un solo pago (cada uno muestra solo sus planes) */
   document.querySelectorAll('[data-periodo]').forEach(b => b.addEventListener('click', () => {
     const p = b.dataset.periodo;
     document.querySelectorAll('[data-periodo]').forEach(x => x.setAttribute('aria-pressed', x === b));
+    // solo los planes de esa forma de pago (los demás se esconden)
+    document.querySelectorAll('[data-planes]').forEach(c => { c.hidden = !c.dataset.planes.split(' ').includes(p); });
+    if (p === 'unico') return;
     document.querySelectorAll('[data-precio-' + p + ']').forEach(el => { el.style.opacity = 0; setTimeout(() => { el.textContent = el.getAttribute('data-precio-' + p); const s = el.nextElementSibling; if (s && s.dataset['unidad' + (p === 'mes' ? 'Mes' : 'Anio')]) s.textContent = s.dataset['unidad' + (p === 'mes' ? 'Mes' : 'Anio')]; el.style.opacity = 1; }, 200); });
   }));
+  const escogido = document.querySelector('[data-periodo][aria-pressed="true"]');
+  if (escogido) document.querySelectorAll('[data-planes]').forEach(c => { c.hidden = !c.dataset.planes.split(' ').includes(escogido.dataset.periodo); });
 
   /* preguntas que se abren con suavidad */
   document.querySelectorAll('.pregunta').forEach(d => {
