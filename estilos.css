@@ -326,3 +326,10 @@ h1 em, .grande em, .titulo-serif em { font-style: italic; color: var(--acento); 
 
 /* páginas «Sistema para…»: la lista en dos columnas, una sola en el celular */
 @media (max-width: 640px) { .checks[style*="columns"] { columns: 1 !important; } }
+
+/* página «Para celulares»: capturas del programa dentro de un marco de teléfono */
+.telefonos { display: flex; gap: 26px; justify-content: center; flex-wrap: wrap; }
+.telefonos figure { margin: 0; flex: 0 1 240px; text-align: center; }
+.telefonos img { width: 100%; height: auto; border-radius: 26px; border: 8px solid #111827; box-shadow: 0 18px 40px rgba(16,24,40,.18); background: #fff; }
+.telefonos figcaption { margin-top: 12px; font-size: .92rem; color: var(--suave, #5b6577); }
+@media (max-width: 640px) { .telefonos { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; padding-bottom: 8px; scroll-snap-type: x mandatory; } .telefonos figure { flex: 0 0 70%; scroll-snap-align: center; } }
