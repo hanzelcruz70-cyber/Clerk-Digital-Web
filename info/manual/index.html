@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="../../estilos.css?v=6d5b7b12">
+<link rel="stylesheet" href="../../estilos.css?v=b502df56">
 <script>try { const t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.tema = t; } catch {}</script>
 </head>
 <body>
@@ -51,7 +51,7 @@
 </nav>
 
 <main id="contenido">
-<div class="contenedor info"><nav aria-label="Información"><p class="ceja">Información</p><a href="../../info/">Resumen</a><a href="../../info/manual/" aria-current="page">Manual de usuario</a><a href="../../info/videos/">Videos</a><a href="../../info/descargas/">Descargas</a><a href="../../info/varias-cajas/">Varias cajas en red</a><a href="../../info/dgi/">Facturas de la DGI</a><a href="../../info/seguridad/">Seguridad y respaldos</a></nav><article class="doc"><p class="ceja">Manual de usuario · versión 1.0.6</p><h1>Cómo se usa Clerk Digital</h1>
+<div class="contenedor info"><nav aria-label="Información"><p class="ceja">Información</p><a href="../../info/">Resumen</a><a href="../../info/manual/" aria-current="page">Manual de usuario</a><a href="../../info/videos/">Videos</a><a href="../../info/descargas/">Descargas</a><a href="../../info/varias-cajas/">Varias cajas en red</a><a href="../../info/dgi/">Facturas de la DGI</a><a href="../../info/seguridad/">Seguridad y respaldos</a></nav><article class="doc"><p class="ceja">Manual de usuario · versión 1.0.9</p><h1>Cómo se usa Clerk Digital</h1>
 <p class="intro">Todo el programa, paso a paso. ¿Preferís verlo? Mirá los <a href="../videos/">videos</a>.</p><p>Este manual explica cómo usar Clerk Digital en la tienda, pantalla por pantalla. Si es tu primera vez, leé las secciones 1 a 6: con eso ya podés vender. Lo demás lo consultás cuando lo necesités.</p>
 <hr>
 <h2 id="1-antes-de-empezar">1. Antes de empezar</h2>
@@ -75,9 +75,12 @@ un <b>cajón de dinero</b> conectado a la impresora.
 </li></ul>
 <p>Clerk Digital pide unos datos de la tienda:</p>
 <ol><li>
-<b>Nombre de la tienda.</b> Es el que sale en el ticket.
+<b>Nombre de la tienda.</b> Es el que sale arriba en el programa y en el ticket.
+<ul><li>
+<b>Logo</b> (opcional): tocá «Subir logo» y escogé la imagen. Si no lo tenés a mano, seguí sin él: mientras tanto sale el de Clerk Digital, y lo subís después en Ajustes › Mi tienda.
+</li></ul>
 </li><li>
-<b>Tipo de negocio</b> (pulpería, minisúper, ferretería, farmacia, librería, ropa). Clerk Digital enciende solo las funciones que ese negocio usa.
+<b>Tipo de negocio</b> (pulpería, minisúper, ferretería, farmacia, librería, ropa, celulares). Clerk Digital enciende solo las funciones que ese negocio usa.
 </li><li>
 <b>Tipo de cambio del día.</b>
 </li><li>
@@ -112,7 +115,7 @@ Al <b>cajero</b> el dueño le escoge qué puede hacer, en <a href="#usuarios">Aj
 <h2 id="3-como-esta-ordenada-la-pantalla">3. Cómo está ordenada la pantalla</h2>
 <p><b>Barra de arriba</b></p>
 <ul><li>
-Nombre de la tienda.
+Logo y nombre de la tienda (sin logo, sale el de Clerk Digital).
 </li><li>
 Tipo de cambio (US$ 1 = C$ …).
 </li><li>
@@ -173,6 +176,8 @@ Si el cliente lo pide en otra medida, tocá esa medida y Clerk Digital convierte
 </li></ul>
 </li><li>
 <b>Tallas y colores:</b> escogé la combinación en la tabla. Cada cuadro dice cuántas quedan.
+</li><li>
+<b>Con IMEI</b> (celulares, laptops…): pregunta «¿Cuál se lleva?» y escaneás el IMEI de la caja o del celular. También podés escanear el IMEI directo en el buscador. Cada celular va en su propia línea y su IMEI sale en el ticket y en la factura, para la garantía. Si otra caja ya lo vendió o lo apartó, no deja cobrar.
 </li><li>
 <b>Medicamento controlado:</b> al cobrar pide nombre del paciente, médico y número de receta. Se anota en el libro de controlados.
 </li><li>
@@ -568,7 +573,7 @@ La otra sucursal lo abre con <b>«Abrir archivo recibido»</b> y se le suma.
 <ul><li>
 Nombre, dirección y teléfono para el ticket.
 </li><li>
-<b>Logo</b> del ticket.
+<b>Logo</b> de la tienda: sale arriba en el programa, junto al nombre de tu tienda, y en los tickets. Con <b>Ver cómo sale el ticket</b> ves un ticket de ejemplo con el logo y los datos de la tienda, del ancho de tu papel, y lo podés imprimir. No es una venta ni gasta un número de ticket.
 </li><li>
 <b>Tipo de negocio</b>.
 </li><li>
@@ -607,7 +612,7 @@ tamaño del papel: 58 u 80 mm.
 </li><li>
 <b>Impresora y cajón son de cada compu:</b> si hay varias cajas, cada una escoge los suyos.
 </li><li>
-<b>Varias cajas en red:</b> dos o más compus cobran juntas con los mismos productos, clientes, fiado y facturas. No hace falta internet: basta el router o el WiFi de la tienda. Cada compu lleva su propia licencia (la caja adicional sale más barata); el aviso de la demo lo ve también la cajera.
+<b>Varias cajas en red:</b> dos o más compus cobran juntas con los mismos productos, clientes, fiado y facturas. No hace falta internet: basta el router o el WiFi de la tienda. Con la licencia <b>Varias cajas</b>, solo la principal lleva clave: las demás cajas del local se activan solas al conectarse a ella. Con la suscripción mensual, cada caja extra lleva su clave (sale más barata). El aviso de la demo lo ve también la cajera.
 <ol><li>
 En la compu que va a guardar todo (la <b>principal</b>), tocá <b>«Usar esta compu como caja principal»</b>. Aparece un <b>código</b> de 8 letras y números, por ejemplo <code>K7P2-QX9M</code>. Si Windows pregunta si Clerk Digital puede usar la red, tocá <b>Permitir</b>.
 </li><li>
@@ -678,7 +683,7 @@ Hay tres planes:
 </li><li>
 <b>Una caja (un solo pago):</b> es tuyo para siempre en esa compu.
 </li><li>
-<b>Varias cajas (un solo pago):</b> todas las cajas de tu tienda, sin límite.
+<b>Varias cajas (un solo pago):</b> todas las cajas de un mismo local, sin límite. Cada sucursal u otro negocio lleva su propia licencia.
 </li></ul>
 </li><li>
 Los planes de un solo pago traen <b>12 meses de actualizaciones y soporte</b>. Aquí se ve hasta qué fecha. Después Clerk Digital <b>sigue funcionando igual</b>; si querés seguir recibiendo las versiones nuevas y el soporte, renovás por un año (es opcional).
@@ -719,7 +724,24 @@ Ahí se guardan los mismos respaldos que en la compu, para no llenar el espacio 
 <hr>
 <h2 id="17-funciones-segun-el-tipo-de-negocio">17. Funciones según el tipo de negocio</h2>
 <p>Se encienden solas al escoger el tipo de negocio. Se pueden cambiar en <b>Ajustes › Mi tienda › Para tu tipo de negocio</b>.</p>
-<table><thead><tr><th>Negocio</th><th>Funciones</th></tr></thead><tbody><tr><td>Pulpería</td><td>Las básicas: venta suelta, fiado, dólares</td></tr><tr><td>Minisúper</td><td>Precio por cliente y empresas con crédito, puntos para clientes frecuentes</td></tr><tr><td>Ferretería</td><td>Cotizaciones, apartados, precio por cliente. La venta por metro, pie o yarda se escoge en cada producto, en «Se vende por»</td></tr><tr><td>Farmacia</td><td>Lotes y vencimientos, medicamento controlado, venta suelta. El fiado viene apagado (se enciende en Ajustes)</td></tr><tr><td>Librería</td><td>Listas escolares y paquetes, cotizaciones</td></tr><tr><td>Ropa y zapatos</td><td>Tallas y colores, apartados, cambio de prenda</td></tr></tbody></table>
+<table><thead><tr><th>Negocio</th><th>Funciones</th></tr></thead><tbody><tr><td>Pulpería</td><td>Las básicas: venta suelta, fiado, dólares</td></tr><tr><td>Minisúper</td><td>Precio por cliente y empresas con crédito, puntos para clientes frecuentes</td></tr><tr><td>Ferretería</td><td>Cotizaciones, apartados, precio por cliente. La venta por metro, pie o yarda se escoge en cada producto, en «Se vende por»</td></tr><tr><td>Farmacia</td><td>Lotes y vencimientos, medicamento controlado, venta suelta. El fiado viene apagado (se enciende en Ajustes)</td></tr><tr><td>Librería</td><td>Listas escolares y paquetes, cotizaciones</td></tr><tr><td>Ropa y zapatos</td><td>Tallas y colores, apartados, cambio de prenda</td></tr><tr><td>Celulares y electrónica</td><td>IMEI y números de serie, cotizaciones, apartados, precio por cliente</td></tr></tbody></table>
+<h3 id="imei-y-numeros-de-serie">IMEI y números de serie</h3>
+<p>Para saber <b>cuál</b> celular entró y salió, no solo cuántos.</p>
+<ul><li>
+En el producto encendé <b>Lleva IMEI o número de serie</b>. Los forros y cargadores no lo necesitan.
+</li><li>
+<b>Al comprar:</b> en Compras escaneás el IMEI de cada uno; la cantidad es la cantidad de IMEI. No deja meter uno repetido ni uno que ya está en la tienda.
+</li><li>
+<b>Lo que ya tenías:</b> en <b>Productos › IMEI › En la tienda › Registrar IMEI de lo que ya hay</b> (no cambia la existencia). Ahí mismo te avisa si la existencia y los IMEI no cuadran.
+</li><li>
+<b>Al vender, devolver o apartar</b> el IMEI se mueve solo: una devolución lo regresa a la tienda (si venía en mal estado queda dado de baja) y un apartado lo guarda hasta que se entrega.
+</li><li>
+<b>Buscar un IMEI</b> (Productos › IMEI) muestra su historia: cuándo entró y de qué proveedor, cuándo se vendió, en qué ticket y a quién, y las devoluciones.
+</li><li>
+Un robo, un dañado o uno devuelto al proveedor se saca con <b>Dar de baja</b> (queda como pérdida). Un IMEI mal escrito que nunca se vendió se puede <b>Corregir</b>. Las dos cosas quedan en «Quién hizo qué».
+</li><li>
+Todavía no se trasladan productos con IMEI entre sucursales.
+</li></ul>
 <hr>
 <h2 id="18-problemas-comunes">18. Problemas comunes</h2>
 <table><thead><tr><th>Pasa esto</th><th>Hacé esto</th></tr></thead><tbody><tr><td>«Primero abrí la caja» al cobrar</td><td>Andá a Caja › Abrir caja.</td></tr><tr><td>No imprime</td><td>En Ajustes › Equipos revisá que esté escogida la impresora y tocá «Imprimir prueba». Revisá que esté encendida y con papel.</td></tr><tr><td>El cajón no se abre</td><td>Tiene que estar conectado a la impresora y la impresora escogida en Ajustes. Probá con «Probar cajón».</td></tr><tr><td>El lector no agrega el producto</td><td>El código no está registrado: buscá el producto por nombre, tocá Editar y escaneá el código en «Código de barras».</td></tr><tr><td>«Ojo: según el sistema ya no hay…»</td><td>Se vende igual. Revisá la existencia con Ajustar o un conteo físico.</td></tr><tr><td>Un cajero no ve una pantalla</td><td>El dueño le da permiso en Ajustes › Usuarios.</td></tr><tr><td>Usuario bloqueado por PIN</td><td>Esperá 5 minutos, o que entre otra persona.</td></tr><tr><td>«Demo» terminada o «Licencia vencida»</td><td>Mandá el código de la compu (Ajustes › Licencia) a Red Informática.</td></tr><tr><td>Windows dice «Windows protegió su PC» al instalar</td><td>Tocá «Más información» y luego «Ejecutar de todas formas». El instalador es seguro: viene de Red Informática.</td></tr><tr><td>Se dañó la compu</td><td>Instalá Clerk Digital en otra y en Ajustes › Respaldos tocá «Restaurar un respaldo». Escogé el último de la USB.</td></tr></tbody></table>
@@ -735,7 +757,7 @@ Ahí se guardan los mismos respaldos que en la compu, para no llenar el espacio 
         <p style="margin-top:12px">El punto de venta para tiendas de Nicaragua: ventas, inventario, fiado, caja y facturas de la DGI, sin internet.</p>
       </div>
       <div><h4>Producto</h4><a href="../../funciones/">Funcionalidades</a><a href="../../negocios/">Negocios</a><a href="../../precios/">Precios</a><a href="../../info/descargas/">Descargar</a></div>
-      <div><h4>Sistema para</h4><a href="../../sistema-de-ventas/">Sistema de ventas</a><a href="../../sistema-para-pulperias/">Pulperías</a><a href="../../sistema-para-ferreterias/">Ferreterías</a><a href="../../sistema-para-farmacias/">Farmacias</a><a href="../../sistema-para-minisuper/">Minisúper</a><a href="../../sistema-para-tiendas-de-ropa/">Ropa y zapatos</a><a href="../../sistema-para-librerias/">Librerías</a></div>
+      <div><h4>Sistema para</h4><a href="../../sistema-de-ventas/">Sistema de ventas</a><a href="../../sistema-para-pulperias/">Pulperías</a><a href="../../sistema-para-ferreterias/">Ferreterías</a><a href="../../sistema-para-farmacias/">Farmacias</a><a href="../../sistema-para-minisuper/">Minisúper</a><a href="../../sistema-para-tiendas-de-ropa/">Ropa y zapatos</a><a href="../../sistema-para-librerias/">Librerías</a><a href="../../sistema-para-tiendas-de-celulares/">Celulares</a></div>
       <div><h4>Ayuda</h4><a href="../../info/manual/">Manual de usuario</a><a href="../../info/videos/">Videos</a><a href="../../info/seguridad/">Seguridad</a><a href="../../contacto/">Contacto</a></div>
       <div><h4>Red Informática</h4><span>Sébaco, Nicaragua</span><a class="con-icono" href="https://wa.me/50589188813" rel="noopener" target="_blank"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z" fill="#25D366"/><path d="M8.6 7.3c.2-.4.5-.4.8-.4h.6c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.5.7c-.1.2-.2.3 0 .6.5.9 1.2 1.6 2.1 2.1.3.2.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.9c.3.1.4.2.4.4 0 .5-.1 1.2-.6 1.6-.5.5-1.3.8-2 .7-1.2-.1-3.2-.9-4.7-2.4S7.6 10.3 7.5 9.1c0-.7.4-1.4 1.1-1.8z" fill="#fff"/></svg>+505 8918-8813</a><a class="con-icono" href="mailto:redinformaticatotal@gmail.com"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>redinformaticatotal@gmail.com</a><a href="../../legal/privacidad/">Privacidad</a><a href="../../legal/terminos/">Términos de uso</a></div>
     </div>
