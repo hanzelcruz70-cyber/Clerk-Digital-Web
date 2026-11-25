@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="../estilos.css?v=e58b7d97">
+<link rel="stylesheet" href="../estilos.css?v=d94f3da4">
 <script>try { const t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.tema = t; } catch {}</script>
 </head>
 <body>
@@ -54,21 +54,38 @@
 <main id="contenido">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Clerk Digital para Android","applicationCategory":"BusinessApplication","operatingSystem":"Android 7 o más nuevo","url":"https://clerk-digital.red-informatica.com/celular/","description":"Punto de venta en el celular o la tablet: cámara para escanear, impresora térmica Bluetooth, fiado, inventario y reportes, sin internet.","offers":[{"@type":"Offer","name":"Celular mensual","price":"200","priceCurrency":"NIO"},{"@type":"Offer","name":"Celular, un solo pago","price":"2000","priceCurrency":"NIO"}],"publisher":{"@id":"https://clerk-digital.red-informatica.com/#red-informatica"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Necesita internet?","acceptedAnswer":{"@type":"Answer","text":"No. Vende, guarda y imprime sin internet, igual que en la compu."}},{"@type":"Question","name":"¿Funciona en iPhone?","acceptedAnswer":{"@type":"Answer","text":"Por ahora solo en Android 7 o más nuevo: la mayoría de los celulares y tablets que se venden en Nicaragua."}},{"@type":"Question","name":"¿Qué impresora necesito?","acceptedAnswer":{"@type":"Answer","text":"Cualquier impresora térmica Bluetooth de 58 u 80 mm de las comunes (ESC/POS). Se empareja en el Bluetooth del teléfono y se escoge en Clerk Digital."}},{"@type":"Question","name":"¿Dónde lo descargo?","acceptedAnswer":{"@type":"Answer","text":"Te lo mandamos por WhatsApp. No está en Google Play: al instalarlo, el teléfono pide permiso para instalar una app de otro origen."}},{"@type":"Question","name":"¿Se llena la memoria del teléfono?","acceptedAnswer":{"@type":"Answer","text":"No. Un año de ventas de una pulpería ocupa unos 35 MB, menos que unas pocas fotos de WhatsApp."}}]}</script>
-<section class="portada" style="padding-bottom:30px">
-  <div class="contenedor centro">
-    <p class="pastilla aparece"><i></i>Nuevo · Android</p>
-    <h1 data-letras style="font-size:clamp(2.4rem,6vw,4.6rem)">Clerk Digital <em>en tu celular</em></h1>
-    <p class="bajada aparece" style="--retraso:.35s">El mismo programa de la compu, en tu celular o tablet Android. Escaneá con la cámara, imprimí el ticket por Bluetooth y llevá el fiado, sin internet.</p>
-    <div class="acciones centro aparece" style="--retraso:.5s"><a class="boton boton-grande" href="https://wa.me/50589188813?text=Hola%2C%20quiero%20Clerk%20Digital%20para%20celular" rel="noopener" target="_blank">Pedirlo por WhatsApp <span class="flecha">→</span></a><a class="boton boton-claro" href="#precios-celular">Ver precios</a></div>
+<section class="portada portada-celular">
+  <div class="contenedor dos-col">
+    <div class="texto-portada">
+      <p class="pastilla aparece"><i></i>Nuevo · Android</p>
+      <h1 data-letras style="font-size:clamp(2.4rem,5.4vw,4.4rem)">Clerk Digital <em>en tu celular</em></h1>
+      <p class="bajada aparece" style="--retraso:.35s;margin-inline:0">El mismo programa de la compu, en tu celular o tablet Android. Escaneá con la cámara, imprimí el ticket por Bluetooth y llevá el fiado, sin internet.</p>
+      <div class="acciones aparece" style="--retraso:.5s"><a class="boton boton-grande" href="https://wa.me/50589188813?text=Hola%2C%20quiero%20Clerk%20Digital%20para%20celular" rel="noopener" target="_blank">Pedirlo por WhatsApp <span class="flecha">→</span></a><a class="boton boton-claro" href="#videos-celular">Ver los videos</a></div>
+      <ul class="chips aparece" style="justify-content:flex-start"><li>Sin internet</li><li>Cámara para escanear</li><li>Impresora Bluetooth</li><li>Conectado a tu compu</li></ul>
+    </div>
+    <div class="escena-celular aparece" style="--retraso:.6s">
+      <div class="telefono-3d">
+        <div class="telefono-marco"><video src="../videos/celular-cobrar.mp4" poster="../img/celular/cobrar.jpg" autoplay muted loop playsinline aria-label="Video: cómo se cobra en Clerk Digital desde el celular"></video></div>
+        <div class="aviso aviso-1"><span class="ico">✓</span><div><b>Venta cobrada en el teléfono</b><small>Ya aparece en la compu</small></div></div>
+        <div class="aviso aviso-2"><span class="ico">📷</span><div><b>Gaseosa Coca-Cola 2 L</b><small>Escaneada: nombre, foto y precio</small></div></div>
+        <div class="aviso aviso-3"><span class="ico">🖨</span><div><b>Ticket impreso</b><small>Impresora Bluetooth de 58 mm</small></div></div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="seccion" style="padding-top:20px">
+<section class="seccion" id="videos-celular">
   <div class="contenedor">
-    <div class="telefonos aparece">
-      <figure><img src="../img/celular-cobrar.jpg" alt="Cobrar en Clerk Digital desde el celular" width="440" height="953" loading="lazy"><figcaption>Cobrar: buscá o escaneá, y el total con Cobrar y Fiar siempre abajo</figcaption></figure>
-      <figure><img src="../img/celular-vuelto.jpg" alt="Calcular el vuelto en el celular" width="440" height="953" loading="lazy"><figcaption>Tocá los billetes que te dieron y te dice el vuelto</figcaption></figure>
-      <figure><img src="../img/celular-fiado.jpg" alt="Cuentas de fiado en el celular" width="440" height="953" loading="lazy"><figcaption>El fiado de cada cliente, con su límite y recordatorio por WhatsApp</figcaption></figure>
+    <p class="ceja aparece">Mirá cómo funciona</p>
+    <h2 class="aparece">Videos cortos, grabados en el teléfono</h2>
+    <p class="bajada aparece" style="margin-inline:0">Así se ve Clerk Digital en un celular Android de verdad. Tocá cualquiera.</p>
+    <div class="videos tres" data-escalonar style="margin-top:28px">
+      <article class="tarjeta video vertical"><div class="cubierta" data-video="../videos/celular-cobrar.mp4" style="background-image:url(../img/celular/cobrar.jpg)"><button class="play" type="button" aria-label="Ver el video: Cobrar">▶</button><span class="duracion">0:26</span></div><div class="texto"><h3>Cobrar</h3><p>Escanear o buscar, el total abajo y el vuelto con un toque.</p></div></article>
+      <article class="tarjeta video vertical"><div class="cubierta" data-video="../videos/celular-producto-solo.mp4" style="background-image:url(../img/celular/producto-solo.jpg)"><button class="play" type="button" aria-label="Ver el video: El producto se llena solo">▶</button><span class="duracion">0:18</span></div><div class="texto"><h3>El producto se llena solo</h3><p>Escaneás el código y trae el nombre, la foto y el precio sugerido.</p></div></article>
+      <article class="tarjeta video vertical"><div class="cubierta" data-video="../videos/celular-fiado.mp4" style="background-image:url(../img/celular/fiado.jpg)"><button class="play" type="button" aria-label="Ver el video: Fiado">▶</button><span class="duracion">0:29</span></div><div class="texto"><h3>Fiado</h3><p>Vender al fiado, ver quién debe y cobrar un abono.</p></div></article>
+      <article class="tarjeta video vertical"><div class="cubierta" data-video="../videos/celular-inventario.mp4" style="background-image:url(../img/celular/inventario.jpg)"><button class="play" type="button" aria-label="Ver el video: Inventario">▶</button><span class="duracion">0:16</span></div><div class="texto"><h3>Inventario</h3><p>Lo que se acaba, buscar productos y ajustar la existencia.</p></div></article>
+      <article class="tarjeta video vertical"><div class="cubierta" data-video="../videos/celular-reporte.mp4" style="background-image:url(../img/celular/reporte.jpg)"><button class="play" type="button" aria-label="Ver el video: ¿Cómo me fue?">▶</button><span class="duracion">0:20</span></div><div class="texto"><h3>¿Cómo me fue?</h3><p>Lo vendido, lo ganado y lo que debe haber en la caja.</p></div></article>
+      <article class="tarjeta video vertical"><div class="cubierta" data-video="../videos/celular-oscuro.mp4" style="background-image:url(../img/celular/oscuro.jpg)"><button class="play" type="button" aria-label="Ver el video: Modo oscuro">▶</button><span class="duracion">0:18</span></div><div class="texto"><h3>Modo oscuro</h3><p>Para la noche: cansa menos la vista.</p></div></article>
     </div>
   </div>
 </section>
@@ -164,6 +181,6 @@
   </div>
 </footer>
 <a class="dudas" href="../contacto/">¿Dudas?</a>
-<script src="../sitio.js?v=60c5c66e" defer></script>
+<script src="../sitio.js?v=abfee8b7" defer></script>
 </body>
 </html>

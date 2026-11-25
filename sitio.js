@@ -94,7 +94,7 @@
     c.innerHTML = ''; c.append(v); v.play().catch(() => {});
   }));
   // el video de la portada se reproduce solo, sin sonido, cuando está a la vista
-  const vp = document.querySelector('.pantalla-3d video');
+  const vp = document.querySelector('.pantalla-3d video, .telefono-3d video');
   if (vp) { if (sinMovimiento) vp.removeAttribute('autoplay'); new IntersectionObserver(es => es.forEach(e => e.isIntersecting && !sinMovimiento ? vp.play().catch(() => {}) : vp.pause())).observe(vp); }
 
   /* video en ventana (botón «Ver el video») */

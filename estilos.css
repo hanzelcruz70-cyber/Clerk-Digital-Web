@@ -328,6 +328,22 @@ h1 em, .grande em, .titulo-serif em { font-style: italic; color: var(--acento); 
 @media (max-width: 640px) { .checks[style*="columns"] { columns: 1 !important; } }
 
 /* página «Para celulares»: capturas del programa dentro de un marco de teléfono */
+/* página de celular: el teléfono con el video y los avisos, y los videos verticales */
+.dos-col { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; }
+.escena-celular { display: grid; place-items: center; perspective: 1400px; }
+.telefono-3d { position: relative; width: min(300px, 78vw); transform: rotateY(-12deg) rotateX(4deg); transition: transform .6s; }
+.telefono-3d:hover { transform: none; }
+.telefono-marco { border: 11px solid #0f1720; border-radius: 40px; overflow: hidden; background: #0f1720; box-shadow: 0 30px 70px rgba(16, 24, 40, .28), inset 0 0 0 1px #334155; }
+.telefono-marco video, .telefono-marco img { display: block; width: 100%; aspect-ratio: 400 / 860; object-fit: cover; border-radius: 29px; background: #fff; }
+.telefono-3d .aviso { min-width: 210px; }
+.telefono-3d .aviso-1 { left: -120px; bottom: 18%; } .telefono-3d .aviso-2 { right: -150px; top: 14%; } .telefono-3d .aviso-3 { right: -110px; bottom: 6%; }
+.videos.tres { grid-template-columns: repeat(6, 1fr); gap: 14px; }
+.video.vertical .texto { padding: 12px 14px; } .video.vertical .texto h3 { font-size: 1rem; margin: 0 0 4px; } .video.vertical .texto p { font-size: .85rem; }
+@media (max-width: 1100px) { .videos.tres { grid-template-columns: repeat(3, 1fr); } }
+.video.vertical .cubierta { aspect-ratio: 400 / 860; background-color: #fff; background-size: cover; background-position: top center; }
+.video.vertical .cubierta video { object-fit: contain; background: #000; }
+@media (max-width: 860px) { .dos-col { grid-template-columns: 1fr; } .telefono-3d { transform: none; } .videos.tres { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .videos.tres { grid-template-columns: 1fr 1fr; gap: 12px; } .video.vertical .texto { padding: 12px; } .video.vertical .texto p { display: none; } }
 .telefonos { display: flex; gap: 26px; justify-content: center; flex-wrap: wrap; }
 .telefonos figure { margin: 0; flex: 0 1 240px; text-align: center; }
 .telefonos img { width: 100%; height: auto; border-radius: 26px; border: 8px solid #111827; box-shadow: 0 18px 40px rgba(16,24,40,.18); background: #fff; }
