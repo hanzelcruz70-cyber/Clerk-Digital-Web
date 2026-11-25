@@ -116,6 +116,19 @@
     if (info) info.textContent = 'Windows 10 u 11 · versión ' + r.tag_name.replace(/^v/, '') + ' · ' + Math.round(a.size / 1048576) + ' MB';
   }).catch(() => {});
 
+  /* descarga de Android: el enlace fijo siempre baja la última; aquí solo se muestra qué versión es */
+  const infoA = document.querySelectorAll('[data-descarga-android-info]');
+  if (infoA.length) fetch('https://api.github.com/repos/hanzelcruz70-cyber/vuelto-releases/releases/tags/android').then(r => r.ok ? r.json() : null).then(r => {
+    // en la misma publicación quedan las APK de antes: la más nueva es la de versión más alta (1.1.10 > 1.1.9)
+    const ver = x => (x.name.match(/^Clerk-Digital-Android-([\d.]+)\.apk$/) || [])[1];
+    const parte = v => v.split('.').map(Number);
+    const mayor = (p, q) => { for (let i = 0; i < 3; i++) if ((p[i] || 0) !== (q[i] || 0)) return (p[i] || 0) > (q[i] || 0); return false; };
+    const a = ((r && r.assets) || []).filter(ver).reduce((m, x) => (!m || mayor(parte(ver(x)), parte(ver(m))) ? x : m), null);
+    if (!a) return;
+    const v = ver(a);
+    infoA.forEach(i => { i.textContent = 'Android 7 o más nuevo · versión ' + v + ' · ' + Math.round(a.size / 1048576) + ' MB · demo gratis de 30 minutos'; });
+  }).catch(() => {});
+
   /* formulario de contacto: se manda por Formspree y llega al correo de Red Informática.
      Si falla (sin internet, Formspree caído), se ofrece mandarlo desde el correo de la persona. */
   const FORMSPREE = 'https://formspree.io/f/mdeajlnk';
